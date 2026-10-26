@@ -1,0 +1,5 @@
+.deveye-highlight {
+  outline: 2px dashed #3b82f6 !important;
+  outline-offset: 2px !important;
+  cursor: crosshair !important;
+}

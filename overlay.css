@@ -1,0 +1,160 @@
+:host {
+  all: initial;
+  display: block;
+  pointer-events: none;
+}
+
+.deveye-tooltip {
+  position: fixed;
+  z-index: 2147483647;
+  max-width: 360px;
+  padding: 9px 11px;
+  border: 1px solid rgba(147, 197, 253, 0.45);
+  border-radius: 6px;
+  background: rgba(17, 24, 39, 0.96);
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.28);
+  color: #f9fafb;
+  font: 12px/1.5 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.deveye-tooltip strong {
+  color: #93c5fd;
+  font-weight: 600;
+}
+
+.deveye-color {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin: 0 5px 0 2px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 2px;
+  vertical-align: -1px;
+}
+
+.deveye-toast {
+  position: fixed;
+  z-index: 2147483647;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 14px;
+  border-radius: 5px;
+  background: #16a34a;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font: 600 13px/1.2 ui-sans-serif, system-ui, sans-serif;
+  pointer-events: none;
+}
+
+.deveye-modal {
+  position: fixed;
+  z-index: 2147483647;
+  width: min(190px, calc(100vw - 16px));
+  padding: 7px;
+  border: 1px solid #334155;
+  border-radius: 5px;
+  background: #0f172a;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.38);
+  color: #e2e8f0;
+  font: 12px/1.2 ui-sans-serif, system-ui, sans-serif;
+  pointer-events: auto;
+}
+
+.deveye-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.deveye-modal-header h2 {
+  margin: 0;
+  color: #f8fafc;
+  font-size: 13px;
+}
+
+.deveye-close-button,
+.deveye-copy-button,
+.deveye-copy-all-button {
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+.deveye-close-button {
+  padding: 0 1px;
+  background: transparent;
+  color: #94a3b8;
+  font-size: 17px;
+  line-height: 1;
+}
+
+.deveye-close-button:hover {
+  color: #f8fafc;
+}
+
+.deveye-properties {
+  display: grid;
+  gap: 3px;
+}
+
+.deveye-property {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 4px;
+  background: #1e293b;
+}
+
+.deveye-property-content {
+  min-width: 0;
+}
+
+.deveye-property-name,
+.deveye-property-value {
+  display: block;
+}
+
+.deveye-property-name {
+  color: #93c5fd;
+  font-size: 9px;
+}
+
+.deveye-property-value {
+  overflow: hidden;
+  margin-top: 0;
+  color: #f8fafc;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.deveye-copy-button,
+.deveye-copy-all-button {
+  border-radius: 2px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.deveye-copy-button {
+  flex: 0 0 auto;
+  padding: 2px 4px;
+}
+
+.deveye-copy-all-button {
+  width: 100%;
+  margin-top: 6px;
+  padding: 4px;
+}
+
+.deveye-copy-button:hover,
+.deveye-copy-all-button:hover {
+  background: #3b82f6;
+}
